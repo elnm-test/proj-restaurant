@@ -1,0 +1,17 @@
+.user-info-container{
+    .el-input,.el-select{
+        @include input-base;
+    }
+    .el-input:first-child{
+        margin: 0px;
+    }
+}
+
+
+@media (max-width:630px){
+    .user-info-container{
+        .el-input,.el-select{
+            width: 90vw;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//Setup
+@import 'setup/typo';
+@import 'setup/var';
+@import 'setup/mixin';
+@import 'setup/func';
+
+//Basic
+@import 'basic/base';
+@import 'basic/helpers';
+@import 'basic/layout';
+
+//Cmps
+
+@import 'cmps/header.scss';
+@import 'cmps/home.scss';
+@import 'cmps/menu.scss';
+@import 'cmps/mealPreview.scss';
+@import 'cmps/about.scss';
+@import 'cmps/table.scss';
+@import 'cmps/userSelection.scss';
+@import 'cmps/userInfo.scss';
+@import 'cmps/staff.scss'

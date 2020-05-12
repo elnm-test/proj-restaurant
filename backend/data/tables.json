@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Table 1",
+        "capacity": 2,
+        "location": "roof",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 2",
+        "capacity": 5,
+        "location": "patio",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 3",
+        "capacity": 8,
+        "location": "patio",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 4",
+        "capacity": 7,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 5",
+        "capacity": 4,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 6",
+        "capacity": 6,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 7",
+        "capacity": 7,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 8",
+        "capacity": 3,
+        "location": "bar",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 9",
+        "capacity": 6,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 10",
+        "capacity": 4,
+        "location": "patio",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 11",
+        "capacity": 4,
+        "location": "bar",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 12",
+        "capacity": 6,
+        "location": "roof",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 13",
+        "capacity": 6,
+        "location": "roof",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 14",
+        "capacity": 2,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 15",
+        "capacity": 7,
+        "location": "patio",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 16",
+        "capacity": 5,
+        "location": "patio",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 17",
+        "capacity": 7,
+        "location": "bar",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 18",
+        "capacity": 4,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 19",
+        "capacity": 4,
+        "location": "bar",
+        "isAvaliable": true,
+        "reservation": null
+    },
+    {
+        "name": "Table 20",
+        "capacity": 5,
+        "location": "inside",
+        "isAvaliable": true,
+        "reservation": null
+    }
+]

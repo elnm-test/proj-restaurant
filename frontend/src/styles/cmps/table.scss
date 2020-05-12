@@ -1,0 +1,113 @@
+.table-container{
+    .reservation-hero{
+        width: 100%;
+        height:50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651),rgba(223, 158, 54, 0.514)),url('https://images.pexels.com/photos/6269/dinner-meal-table-wine.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        @include title;
+    }
+    .reservation-info{
+        width: 100%;
+        padding: 40px 20px;
+        border-bottom:1px solid $clr-menu-feature;
+
+        .details{
+            width: 100%;
+            h3,h4{
+                margin: 0px;
+                font-family: galada,vibes,sans-serif;
+                letter-spacing: 1px;
+            }
+            h3{
+                font-size: 40px;
+            }
+            h4{
+                margin-bottom: 20px;
+            }
+            .btn-phone{
+                color: white;
+                background-color: $clr-main;
+                text-align: center;
+                width: 200px;
+                height: 50px;
+                padding: 10px 20px;
+                span{
+                    margin-right: 10px;
+                }
+                i.phone{
+                    color: white;
+                }
+            }
+        }
+        .contact{
+            p{
+                .notify{
+                    display: block;
+                    color: red;
+                }
+            }
+        }
+    }
+    .selection-header{
+        margin:20px 0px;
+        .active{
+            color: $clr-main;
+            border-bottom: 2px solid $clr-main;
+        }
+        .selection-navbar{
+            font-family: galada, vibes, sans-serif;
+            font-size: 20px;
+            span:first-child{
+                margin-right: 25px;
+            }
+        }
+    }
+    .buttons-container{
+        margin-bottom: 30px;
+        .button{
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            border:none;
+            background-color: $clr-main;
+            color: white;
+        }
+        .booking-btns :first-child{
+            margin-right: 30px;
+        }
+    }
+}
+
+@media (max-width:605px){
+    .table-container{
+        padding-right: 0px;
+        padding-left: 0px;
+        .reservation-hero{
+            width: 100vw;
+        }
+        .reservation-info{
+            .details{
+                flex-direction: column;
+                align-items: flex-start;
+                .btn-phone{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .buttons-container .booking-btns .el-button span {
+            margin-right: 0px;
+        }
+    }
+    //Side Piceker Display
+    .el-picker-panel [slot=sidebar], .el-picker-panel__sidebar {
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+    .el-message-box.el-message-box--center{
+        width: 100vw;
+    }
+}

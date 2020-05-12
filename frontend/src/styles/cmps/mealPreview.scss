@@ -1,0 +1,116 @@
+.menu-row{
+    text-align: left;
+    padding: 5px 15px;
+    height: auto;
+    transition: all 0.3s linear;
+    font-family: mont;
+    &:hover{
+        background-color: rgba(203, 230, 255, 0.582);
+    }
+    .meal-img{
+        border-radius: 200px;
+        border:5px solid $clr-menu-feature;
+        padding: 2px;
+        object-fit: cover;
+        width:80px;
+        height:80px;
+    }
+
+    .meal-details-container{
+        width: 100%;
+        margin-left: 20px;
+        .meal-name{
+            margin: 0;
+            font-size: 20px;
+            .vege-icon,.recommended-icon{
+                font-size: 16px;
+                margin-left: 10px;
+            }
+            .vege-icon{
+                color: rgb(80, 163, 80);
+            }
+            .recommended-icon{
+                color: cadetblue;
+            }
+        }
+        .meal-info{
+            width: 100%;
+            .meal-ingredients{
+                max-width:80%;
+            }
+        }
+    }
+    .employe-box, .employe-box-mobile{
+        width: 100px;
+        .remove, .edit{
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .remove{
+            color: rgb(255, 34, 34);
+        }
+        .edit{
+            color: rgb(1, 132, 255);
+        }
+    }
+    .employe-box-mobile{
+        display: none;
+    }
+    .meal-price{
+        width: 120px;
+        height: 50px;
+        padding-left: 40px;
+        font-size: 20px;
+        font-family: raleway;
+        font-weight: 600;
+        border-left: 2px solid $clr-menu-feature;
+    }
+}
+
+.details-wrapper{
+    width: 100%;
+}
+
+@media (max-width:720px){
+    .menu-row{
+        width: 100vw;
+        padding: 5px 0px;
+        flex-direction: column;
+        .meal-img{
+            width: 160px;
+            height: 160px;
+            margin: 30px 0px;
+        }
+        .meal-price{
+            font-size: 16px;
+            width: 80px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        .meal-details-container .meal-info .meal-ingredients {
+            max-width: 100%;
+            padding-right: 5px;
+        }
+        .meal-details-container .meal-name{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+    }
+}
+
+@media (max-width: 550px){
+    .menu-row{
+            .employe-box-mobile{
+                display: flex;
+                margin-top: 20px;
+                .remove, .edit{
+                    margin:0px;
+                }
+             
+            }
+            .employe-box{
+                display: none;
+            }
+    }
+}

@@ -1,0 +1,113 @@
+.menu-container{
+    @include title;
+    & > h3{
+        font-size: 40px;
+        margin: 25px 0px;
+        font-family: galada,pacifo,sans-serif;
+    }
+    & .menu-header+h3{
+        margin-top: 0px;
+    }
+
+    .menu-screen{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.685);
+        .edit-container{
+            width: 50%;
+            height: 60%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $clr-background;
+            padding: 30px 100px;
+            overflow-y: scroll;
+            .edit-header-box{
+                margin-bottom: 40px;
+                .exit{
+                    cursor: pointer;
+                }
+            }
+            h2{
+                font-family: galada,mont,sans-serif;
+                font-size: 25px;
+            }
+            .edit-input-box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+                span{
+                    font-family: mont;
+                    font-weight: 800;
+                }
+                input, textarea, select{
+                    font-family: openSans,lato,sans-serif;
+                    padding: 5px;
+                    border:none;
+                    background-color: white;
+                }
+                textarea {
+                    resize: none;
+                }
+            }
+            .edit-btns{
+                .confirm-changes, .cancel{
+                    width: 150px;
+                    padding: 5px;
+                    border:none;
+                    color: white;
+                    &.confirm-changes{
+                        margin-right: 15px;
+                        background-color: $clr-confirm;
+                    }
+                    &.cancel{
+                        color: black;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:990px){
+    .menu-container{
+
+        .menu-screen{
+            .edit-container{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width:720px){
+    .menu-container{
+        & > h3{
+            padding-left: 5px;
+        }
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+
+    }
+}
+
+@media (max-width:630px){
+    .menu-container{
+
+        .menu-screen{
+            .edit-container{
+                padding: 0px 5px 5px;
+                width: 90vw;
+            }
+        }
+    }
+}

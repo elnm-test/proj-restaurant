@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "userName": "John",
+    "email": "j@gmail.com",
+    "password": "j123",
+    "imgUrl": "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 2,
+    "userName": "Israel",
+    "email": "israel@gmail.com",
+    "password": "israel123",
+    "imgUrl": "https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 3,
+    "userName": "Shoko",
+    "email": "shoko@gmail.com",
+    "password": "shoko123",
+    "imgUrl": "https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 4,
+    "userName": "Lulu",
+    "email": "lulu@gmail.com",
+    "password": "lulu123",
+    "imgUrl": "https://images.pexels.com/photos/1458332/pexels-photo-1458332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  }
+]

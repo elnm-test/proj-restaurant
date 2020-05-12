@@ -1,0 +1,184 @@
+header{
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    font-weight: 800;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px 50px;
+    transition: all 0.3s linear;
+
+    .body-screen{
+        display: none;
+        transition: all 0.3s linear;
+        &.screen-open{
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.685);
+        }
+    }
+
+
+    &.header-background{
+        background-color: rgb(3, 3, 3);
+        padding: 20px 50px;
+    }
+    &.staff-header{
+        padding: 20px 50px;
+        .logo{
+            color:black;
+            border-color: black;
+            border-radius: 0px;
+            background-color: white;
+        }
+        
+    }
+    .logo{
+        font-size: 20px;
+        font-family: vibes;
+        padding: 10px;
+        border:2px solid white;
+        border-radius:200px;
+        transition: all 0.4s ease-in-out;
+
+    }
+    nav{
+        .router-link-active{
+            color: $clr-link;
+        }
+        & > *:not(:last-child) {
+            margin-right: 25px;
+        } 
+        .nav-icon{
+            display: none;
+        }
+    }
+    .menu-side{
+        margin-left: 25px;
+    }
+    .user-profile{
+        border-radius: 200px;
+    }
+
+    &.sticky{
+        background-color: rgb(3, 3, 3);
+        padding: 20px 50px;
+    }
+    .menu-btn{
+        display: none; 
+        color: white;
+        font-size: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:790px){
+    header{
+        font-family: mont,openSans,sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
+        nav.nav-resp{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 30vw;
+        min-width: 200px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        overflow:hidden;
+        background-color: $clr-background;
+        letter-spacing: 2px;
+        transform: translateX(100%);
+        
+        
+        & > * {
+            width: 100%;
+            text-align: left;
+            margin-right: 0;
+            padding-left: 10px;
+            border-bottom: 1.5px solid black;
+
+            &:first-child{
+                margin-top: 50px;
+            }
+            .nav-icon{
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+        & .route{
+            margin: 0px;
+            padding: 20px 0px;
+            padding-left: 10px;
+            border-left: none;
+            border-right: none;
+        }
+
+        .route{
+            color: black;
+        }
+        .router-link-active{
+            color: $clr-link;
+        }
+
+        &.menu-open{
+            transition: transform 0.2s linear;
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+            transform: translateX(0);
+            font-size: 14px;
+        }
+    }
+
+        .menu-btn{
+            display: inline;
+        }
+    }
+}
+
+@media (max-width:630px){
+        header{
+            nav.nav-resp{
+            width: 100vw;
+            height: auto;
+            transform: translateY(-100%);
+            padding-bottom: 0px;
+            background-color: $clr-main;
+            & > *{
+                justify-content: center;
+                padding: 20px;
+                color: rgb(243, 213, 158);
+                font-weight: 700;;
+                &:first-child{
+                    margin-top:10px;
+                }
+                
+            }
+            & .route{
+                padding: 10px;
+                color: white;
+                &.router-link-active{
+                    color: $clr-second;
+                    & i{
+                        color: $clr-second;
+                    }
+                }
+            }
+            &.menu-open{
+                padding: 0px;
+                transform: translateY(0%);
+            }
+        }
+    }   
+}

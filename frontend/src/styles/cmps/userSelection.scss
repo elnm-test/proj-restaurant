@@ -1,0 +1,22 @@
+
+.table-select{
+        .el-iput,.el-select,.el-date-editor.el-input{
+           @include input-base;
+        }
+        .el-date-editor.el-input{
+            margin: 0px;
+        }
+        //    .el-input__inner{
+               
+        //    }
+
+}
+
+@media (max-width:630px){
+        .table-select{
+            .el-iput,.el-select,.el-date-editor.el-input{
+                width: 90vw;
+            }
+    }
+}
+
